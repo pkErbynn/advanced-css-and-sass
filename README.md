@@ -1,1 +1,2 @@
-"# advanced-css-and-sass" 
+# advanced-css-and-sass
+Taking my CSS skills to the next LEVEL!
