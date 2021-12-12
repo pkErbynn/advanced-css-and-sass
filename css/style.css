@@ -18,7 +18,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #7777;
+    color: #777;
     padding: 30px;
 }
 
@@ -31,7 +31,8 @@ header {
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); /* top-left corner as ref */
-    position: relative;  /* for absolute position of logo */
+    /* for absolute position of logo and centering of header content */
+    position: relative;
 }
 
 .logo-box {
@@ -50,12 +51,19 @@ header {
     top: 45%;
     left: 50%;
     /* vertical and horizontal middling */
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+
+    text-align: center;
 }
 
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
+
+    /* hides any shake after transformation */
+    backface-visibility: hidden;
+
+    margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -63,6 +71,15 @@ header {
     font-size: 60px;
     font-weight: 400px;
     letter-spacing: 30px;
+
+    animation-name: moveFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; 
+
+    /* 
+    animation-iteration-count: 3;
+    animation-delay: 1s;
+    */
 }
 
 .heading-primary-sub {
@@ -70,5 +87,147 @@ header {
     font-size: 20px;
     font-weight: 700px;
     letter-spacing: 15.7px;
+    
+    /* 
+    animation-name: moveFromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; 
+    */
+
+    /* combined in oneline */
+    animation: moveFromRight 1s ease-out;
+}
+
+@keyframes moveFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px); /*from left dxn*/
+    }
+
+    /* can rotate too */
+    /* 60% {
+        transform: rotate(120deg)
+    } */
+
+    80% {
+        opacity: 0.8;
+        transform: translateX(15px);
+        /* transform: translateX(15px) rotate(170deg); */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+        /* syntax order;: transform, translate  */
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: translateX(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+.btn:visited,
+.btn:link {
+    text-transform: uppercase;
+    /* remove link format */
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    /* big radius to auto round corners */
+    border-radius: 400px;
+
+    /* applied on initial state....more, google for transition property */
+    transition-property: transform; /*the hover prop to affect*/
+    transition-duration: .2s;
+    /* combined */
+    /* transition: transform .2s;   */
+
+    /* reference to hide btn behine */
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+/* when clicked */
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+/* after - like child element */
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 200px;
+
+    /* stay behind original need reference */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* stay behind */
+    z-index: -1;
+
+    /* triggers >> .btn:hover::after  */
+    transition: all .4s;
+     
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+/* child element take effect when btn hovered */
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    /* fades out the wave */
+    opacity: 0;
+}
+
+@keyframes moveFromBottom {
+    /* 0 and 100 since move from one point to another  */
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        /* syntax order;: transform, translate  */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn-animation {
+    /* animation: name, duration, timing-function, delay */
+    animation: moveFromBottom .5s ease-out .7s;
+
+    /* prevent button being visible before animation happens */
+    /* applies styles in zero % before animation starts */
+    animation-fill-mode: backwards;
+
 
 }
