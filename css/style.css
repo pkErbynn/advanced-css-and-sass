@@ -12,14 +12,23 @@ Dark green: #28b485
     box-sizing: border-box;
 }
 
+html {
+    /* rem on all children...easy to compute since relative on root...em difficult to compute, relative on parent */
+    /* 3rem = 3 x 10 = 30px */
+    font-size: 10px;
+}
+
 /* inheritable reset */
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+
+    /* inherited at html #15 */
+    /* font-size: 16px; */
+
     line-height: 1.7;
     color: #777;
-    padding: 30px;
+    padding: 3rem;
 }
 
 header {
@@ -37,12 +46,12 @@ header {
 
 .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo {
-    height: 30px;   /* width auto figured out since mostly longer */
+    height: 3rem;   /* width auto figured out since mostly longer */
 }
 
 .heading-text-box {
@@ -63,14 +72,14 @@ header {
     /* hides any shake after transformation */
     backface-visibility: hidden;
 
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .heading-primary-main {
     display: block;
-    font-size: 60px;
-    font-weight: 400px;
-    letter-spacing: 30px;
+    font-size: 6rem;
+    font-weight: 40rem;
+    letter-spacing: 3rem;
 
     animation-name: moveFromLeft;
     animation-duration: 1s;
@@ -84,9 +93,9 @@ header {
 
 .heading-primary-sub {
     display: block;
-    font-size: 20px;
-    font-weight: 700px;
-    letter-spacing: 15.7px;
+    font-size: 2rem;
+    font-weight: 70rem;
+    letter-spacing: 1.5rem;
     
     /* 
     animation-name: moveFromRight;
@@ -101,7 +110,7 @@ header {
 @keyframes moveFromLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px); /*from left dxn*/
+        transform: translateX(-10rem); /*from left dxn*/
     }
 
     /* can rotate too */
@@ -111,7 +120,7 @@ header {
 
     80% {
         opacity: 0.8;
-        transform: translateX(15px);
+        transform: translateX(1.5rem);
         /* transform: translateX(15px) rotate(170deg); */
     }
 
@@ -124,13 +133,13 @@ header {
 @keyframes moveFromRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
         /* syntax order;: transform, translate  */
     }
 
     80% {
         opacity: 0.5;
-        transform: translateX(-15px);
+        transform: translateX(-1.5rem);
     }
 
     100% {
@@ -145,30 +154,33 @@ header {
     text-transform: uppercase;
     /* remove link format */
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
     /* big radius to auto round corners */
-    border-radius: 400px;
-
+    border-radius: 40rem;
+    
     /* applied on initial state....more, google for transition property */
     transition-property: transform; /*the hover prop to affect*/
     transition-duration: .2s;
     /* combined */
     /* transition: transform .2s;   */
-
+    
     /* reference to hide btn behine */
     position: relative;
+
+    /* unique font */
+    font-size: 16px;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
 /* when clicked */
 .btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
 .btn-white {
@@ -182,7 +194,9 @@ header {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 200px;
+
+    /* bigger px to meet curve */
+    border-radius: 20rem;
 
     /* stay behind original need reference */
     position: absolute;
@@ -211,7 +225,7 @@ header {
     /* 0 and 100 since move from one point to another  */
     0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(3rem);
         /* syntax order;: transform, translate  */
     }
 

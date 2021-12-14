@@ -71,3 +71,10 @@ NB: <br>
 - rem: measured relative to the **document's root** font-size
 - vh && vw: % measurement of the viewport's height and width respectively.
 
+### Inheritance
+- some specific declarations are passed from parent to children
+- text declarations are inherited: font-family, font-size, color, etc
+- computed value of a property is what gets inherited, not the declared value
+- every property is set, if not declared, it is inherited
+- "inherit" keyword forces inheritance on a property
+- "initial" resets property to its initial value 
