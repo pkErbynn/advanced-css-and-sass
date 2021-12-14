@@ -47,6 +47,9 @@ Final rendered website <--- Website rendering(by the visual formatting model) <-
     declaration block
     property: declared value;  <---- declaration
 }
+
+element:psuedoclass....eg. btn:hover
+element::psuedoelement....eg. btn::after
 </pre>
 
 ## CSS Presedence
