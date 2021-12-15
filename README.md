@@ -50,7 +50,9 @@ Final rendered website <--- Website rendering(by the visual formatting model) <-
 
 element:psuedoclass....eg. btn:hover
 element::psuedoelement....eg. btn::after
+
 </pre>
+box-sizing: border-box...padding, border part of declared **width** or **height**
 
 ## CSS Presedence
 1. Importance: author/dev > user > browser
@@ -81,3 +83,30 @@ NB: <br>
 - every property is set, if not declared, it is inherited
 - "inherit" keyword forces inheritance on a property
 - "initial" resets property to its initial value 
+
+## Positioning schemes
+- Normal flow: 
+    - relative position by default
+    - not floated 
+    - not absolutely positioned
+    - elements being in normal flow, laid out according to their code/source order
+- Float:
+    - element removed from the normal flow
+    - text and inline elements will **wrap around the floated element**
+    - container's heigt not adjusted, fixed with clear-fix
+    - float = right or left
+- Absolute:
+    - element removed from the normal flow
+    - no impact on surrounding elements
+    - top, bottom, right, left to offset from relative element
+    - absolute / fixed 
+    - can overlap and form stack.....z-index arranges that 
+
+## CSS architecture, components and BEM  
+* Think -> Build -> Architect
+* Think: modular bulding blocks, layout, reuseable and independent components
+* Build: BEM (Block Element Modifier)
+    * .block {}
+    * .block__element {}
+    * .block__elmenet--modifier {}
+* Architect: logical file and folder structure
