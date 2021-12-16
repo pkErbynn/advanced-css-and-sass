@@ -119,33 +119,55 @@ NB: <br>
         * The website has no idea that css is written in SASS, only the output (css code compiled) 
 
 * Features
-    * variables, nestings, operators, mixins, functions, partials & imports, extends, control directives
+    * variables, nestings, operators, 
+    * mixins (block of code, multiple lines), functions, partials & imports, extends, control directives
+    * easy comment syntax - //
 
 * 2 SASS Syntaxes
     1. SCSS: curly braced
     2. Sass: no curly braces, only indentation
 
 ### Sass Usage
-<pre>
 // html
+```html
 <ul class="navigation">
     <li><a href="#">about us</a></li>
     <li><a href="#">pricing</a></li>
     <li><a href="#">contact us</a></li>
 </ul>
+```
 
 // sass
+```scss
+$color-primary: blue;
+$color-text-primary: #fff;
+
+@mixin style-link-text($col) {
+    text-decoration: none;
+    color: $col;
+}
+
 .navigation {
     list-style: none;
+    background-color: $color-primary;
 
-    li {
-        text-decoration: none;
+    li {    // .navigation li
         display: inline-block;
 
         &:first-child {     // .navigation li:first-child
             margin: 0;
         }
-    }
 
+        a {     // .navigation li a
+            //text-decoration: none; (mixined)
+            //color: $color-text-primary; (mixined)
+
+            @include style-link-text($color-text-primary);
+
+            &:hover {       // .navigation li a:hover
+                text-decoration: underline;
+            }
+        }
+    }
 }
-</pre>
+```
