@@ -54,6 +54,7 @@ element::psuedoelement....eg. btn::after
 </pre>
 box-sizing: border-box...padding, border part of declared **width** or **height**
 
+
 ## CSS Presedence
 1. Importance: author/dev > user > browser
 2. Specificity: inline > IDs > Classes,pseudo-classes,attrib>Elements,pseudo-elements
@@ -110,3 +111,41 @@ NB: <br>
     * .block__element {}
     * .block__elmenet--modifier {}
 * Architect: logical file and folder structure
+
+## SASS 
+* SASS is a CSS preprocessor that extends CSS and adds power and elegance to the basic language
+    * Preprocessor: processing by compiling sass source code into css first.
+    * SASS Source Code -----SASS Compiler----> (into) Compiled CSS code
+        * The website has no idea that css is written in SASS, only the output (css code compiled) 
+
+* Features
+    * variables, nestings, operators, mixins, functions, partials & imports, extends, control directives
+
+* 2 SASS Syntaxes
+    1. SCSS: curly braced
+    2. Sass: no curly braces, only indentation
+
+### Sass Usage
+<pre>
+// html
+<ul class="navigation">
+    <li><a href="#">about us</a></li>
+    <li><a href="#">pricing</a></li>
+    <li><a href="#">contact us</a></li>
+</ul>
+
+// sass
+.navigation {
+    list-style: none;
+
+    li {
+        text-decoration: none;
+        display: inline-block;
+
+        &:first-child {     // .navigation li:first-child
+            margin: 0;
+        }
+    }
+
+}
+</pre>
