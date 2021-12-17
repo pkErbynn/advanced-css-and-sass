@@ -88,19 +88,19 @@ NB: <br>
 ## Positioning schemes
 - Normal flow: 
     - relative position by default
-    - not floated 
+    - not floated
     - not absolutely positioned
     - elements being in normal flow, laid out according to their code/source order
 - Float:
     - element removed from the normal flow
     - text and inline elements will **wrap around the floated element**
-    - container's heigt not adjusted, fixed with clear-fix
+    - container's height not adjusted, fixed with clear-fix
     - float = right or left
 - Absolute:
     - element removed from the normal flow
     - no impact on surrounding elements
     - top, bottom, right, left to offset from relative element
-    - absolute / fixed 
+    - absolute / fixed
     - can overlap and form stack.....z-index arranges that 
 
 ## CSS architecture, components and BEM  
@@ -120,7 +120,10 @@ NB: <br>
 
 * Features
     * variables, nestings, operators, 
-    * mixins (block of code, multiple lines), functions, partials & imports, extends, control directives
+    * mixins (block of reusable code, multiple lines), 
+    * functions (similar to mixins but returns result), 
+    * extends 
+    * partials & imports, control directives
     * easy comment syntax - //
 
 * 2 SASS Syntaxes
@@ -147,9 +150,14 @@ $color-text-primary: #fff;
     color: $col;
 }
 
+@function divide($a, $b){
+    @return $a / $b;
+}
+
 .navigation {
     list-style: none;
     background-color: $color-primary;
+    margin: divide(60, 2) * 1px;  // 30px;
 
     li {    // .navigation li
         display: inline-block;
