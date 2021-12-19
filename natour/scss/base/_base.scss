@@ -1,0 +1,38 @@
+/* universal reset */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+
+    /* moved from here to body */
+    /* box-sizing: border-box; */
+
+    box-sizing: inherit;
+}
+
+html {
+    /* rem on all children...easy to compute since relative on root...em difficult to compute, relative on parent */
+    /* 3rem = 3 x 10 = 30px */
+    /* font-size: 10px; */
+
+    // defines what 1rem is
+    /* makes it fluid, flex and dynamic, responsiveness */
+    /* 62.5 of 16px(default) = 10px */
+    font-size: 62.5%;
+}
+
+/* inheritable reset */
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+
+    /* inherited at html #15 */
+    /* font-size: 16px; */
+
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
+
+    box-sizing: border-box;
+}

@@ -179,3 +179,52 @@ $color-text-primary: #fff;
     }
 }
 ```
+
+## NPM and Node ecosystem
+- Node: 
+    - Js server-side dev tool,
+    - also, tool for **local web dev**
+- NPM:
+    - cmd tool for devs to **install and manage packages locally**
+    - contains **open-source tools, libraries and frameworks** for modern web dev
+- Usage:
+    ```cmd
+    $ npm init (creates package.json file)
+    $ npm install <pkg> --save (persist in package.json's dependencies block + node_module creation(including supported files))
+    $ npm install <pkg> --save-dev (persist in package.json's devDependencies block + node_module creation(including supported files))
+    $ npm install <pkg> -g (install globally on pc, not seen in package.json)
+    $ npm install (installs all mode-modules)
+    $ npm uninstall pkg --save
+    ```
+- Script block: Compiling sass locally:
+    ```script
+    "script": {
+        "compile:css": "node-sass input output",
+        "<script-name>": "<node-pkg-dependency> <args>" or usage...makes use of installed dependencies in the package.json
+    }
+    ```
+    - Script run:
+    ```
+    $ npm run <scrip-name>
+    ```
+
+## CSS Architecture w/ Sass
+- Used in mult-page big web project 
+- uses `imports` and `partials`<br>
+
+file structure
+
+- /sass 
+    - /abstracts
+        - _variables.scss
+        - _mixins.scss
+        - _functions.scss
+    - /base
+        - _animation.scss
+        - _base.scss
+        - _typography.scss
+        - _utilities.scss
+    - components
+    - layout
+    - /pages
+        - _home.scss
