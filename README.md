@@ -228,3 +228,19 @@ file structure
     - layout
     - /pages
         - _home.scss
+
+## The 3 basic principles of responsiveness design
+1. Fluid grids and layout
+    - Use % instead of px for layout lenght
+    - Layout types
+        - Float
+        - Flexbox
+        - Grid
+2. Flexible images
+3. Media queries
+
+## Useful resource links
+* bennettfeely.com/clippy
+
+## Custom grid w/ float
+Grid - a design sys used to build consistent interfaces.
