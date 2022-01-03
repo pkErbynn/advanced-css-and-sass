@@ -7,7 +7,10 @@
         url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); // other browser support
     clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); /* top-left corner as ref */
+
     /* for absolute position of logo and centering of header content */
     position: relative;
     

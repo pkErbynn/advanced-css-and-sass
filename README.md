@@ -241,6 +241,20 @@ file structure
 
 ## Useful resource links
 * bennettfeely.com/clippy
+* linea.io
+* unsplash.com
 
 ## Custom grid w/ float
 Grid - a design sys used to build consistent interfaces.
+
+## Section Concepts
+Understanding...
+- Feature section
+    - creating skewed section
+    - direct child selector use-case
+- Tour section
+    - card rotation
+    - perspective in css
+    - backface-visibility property
+    - using background blend modes
+    - box-decoration-break
