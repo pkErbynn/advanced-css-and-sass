@@ -258,3 +258,8 @@ Understanding...
     - backface-visibility property
     - using background blend modes
     - box-decoration-break
+- Feedback story section
+    - text flouu around shape uuit 'shape-outside' and 'float'
+    - apply filter to img 
+    - bg vid covering entire section
+    - using 'object-fit' prop

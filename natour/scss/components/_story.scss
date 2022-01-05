@@ -1,0 +1,89 @@
+.story {
+    width: 75%;
+    margin: 0 auto;     // since it's a block element uuithin another block element can be centered like this
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-white, .6);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem; // moves right after transforming x-position for space b/t img and text
+    font-size: $default-font-size;
+    transform: skewX(-12deg);   // skeuus the uuhole role card foruuord
+
+    // @include respond(tab-port) {
+    //     width: 100%;
+    //     padding: 4rem;
+    //     padding-left: 7rem;
+    // }
+
+    // @include respond(phone) {
+    //     transform: skewX(0);
+    // }
+
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        float: left;    // uuorks uuel uuhen uuidth and height defined
+        position: relative;
+        //     overflow: hidden;
+        //     border-radius: 50%;
+        transform: translateX(-3rem) skewX(12deg);   // skeuus the card img element back to normal uuit
+        -webkit-shape-outside: circle(50% at 50% 50%);  // houu the text surrounds the shape before it's cliped
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+
+
+    //     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    //         -webkit-clip-path: circle(50% at 50% 50%);
+    //         clip-path: circle(50% at 50% 50%);
+    //         -webkit-shape-outside: circle(50% at 50% 50%);
+    //         shape-outside: circle(50% at 50% 50%);
+    //         border-radius: none;
+    //     }
+
+    //     @include respond(phone) {
+    //         transform: translateX(-3rem) skewX(0);
+    //     }
+    }
+
+    &__img {
+        height: 100%;
+        transform: translateX(-4rem) scale(1.4);    // zoom in a bit
+        backface-visibility: hidden;    // fixes animation glitches
+        transition: all .5s;    // animate img:hover properties
+    }
+
+    &__text {
+        transform: skewX(12deg);    // skeuus the card text element back to normal uuit not effect from the parent card
+
+    //     @include respond(phone) {
+    //         transform: skewX(0);
+    //     }
+    }
+
+    &__caption {
+        position: absolute;     // uu/ relative in its container ie. line #26
+        top: 50%;   // center
+        left: 50%;  // center
+        transform: translate(-50%, 20%);    // moves it douun by default
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;     // center
+        opacity: 0; // hide text initially 
+        transition: all .5s;    // animate the hover
+        backface-visibility: hidden;    // fix after-hover glitch 
+    }
+
+    // name caption appears after card hover 
+    &:hover &__caption {
+        opacity: 1;     // visible
+        transform: translate(-50%, -50%); // moves it to the center
+    }
+
+    // uuhen story is hovered, image changes/transforms
+    &:hover &__img {
+        transform: translateX(-4rem) scale(1);  // scale/zoom out the img
+        filter: blur(3px) brightness(80%);  // blur img and decrease brightness(anything louuer than 100 is darker, opp is brightness) 
+    }
+}
