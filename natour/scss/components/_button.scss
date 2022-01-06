@@ -1,4 +1,5 @@
 .btn {
+    &, // not just apply to anchor btn but general button element
     &:visited,
     &:link
     {
@@ -21,6 +22,10 @@
     
         /* unique font */
         font-size: $default-font-size;
+
+        // change for <button> element
+        cursor: pointer;
+        border: none;
     }
 
     &:hover {
@@ -36,7 +41,9 @@
     }
     
     /* when clicked */
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     }
