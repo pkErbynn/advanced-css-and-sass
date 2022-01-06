@@ -1,0 +1,107 @@
+.form {
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit; // input forms doesn't really inherit font stuff automatically 
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);   // input form inside a bit transparent..not full uuhite
+        border: none;   // remove default form border
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+
+        // @include respond(tab-port) {
+        //     width: 100%;
+        // }
+
+        &:focus {
+            outline: none;  // remove default border on focus
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-primary;    // custom border...uuill stretch form by 3px uuhen clicked inside...therefore add some to the initial state but transparent...#14 
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-secondary-dark;
+        }
+
+        // psuedo element since '::'...this ele is found on the uueb page
+        &::-webkit-input-placeholder {
+            color: $color-grey-dark-2;  //make the placeholder text light darky that uuhen typed inside 
+        }
+    }
+
+
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;   // bolder
+        margin-left: 2rem;  // align it uuit the placeholder txt
+        margin-top: .7rem;
+        display: block; // block line fill 
+        transition: all .3s;
+    }
+
+    // adjacent sibling selector...uuhen placeholder is shouun, hide label
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;  // remove from page...but not animated, that's uuhy #51
+        transform: translateY(-4rem);   // move placeholder txt to the top initially, before it goes douun via animation
+    }
+
+
+    // &__radio-group {
+    //     width: 49%;
+    //     display: inline-block;
+
+    //     @include respond(tab-port) {
+    //         width: 100%;
+    //         margin-bottom: 2rem;
+    //     }
+    // }
+
+    // &__radio-input {
+    //     display: none;
+    // }
+    
+    // &__radio-label {
+    //     font-size: $default-font-size;
+    //     cursor: pointer;
+    //     position: relative;
+    //     padding-left: 4.5rem;
+    // }
+
+    // &__radio-button {
+    //     height: 3rem;
+    //     width: 3rem;
+    //     border: 5px solid $color-primary;
+    //     border-radius: 50%;
+    //     display: inline-block;
+    //     position: absolute;
+    //     left: 0;
+    //     top: -.4rem;
+
+    //     &::after {
+    //         content: "";
+    //         display: block;
+    //         height: 1.3rem;
+    //         width: 1.3rem;
+    //         border-radius: 50%;
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         background-color: $color-primary;
+    //         opacity: 0;
+    //         transition: opacity .2s;
+    //     }
+    // }
+
+    // &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    //     opacity: 1;
+    // }
+}

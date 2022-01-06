@@ -243,6 +243,7 @@ file structure
 * bennettfeely.com/clippy
 * linea.io
 * unsplash.com
+* coverr.co
 
 ## Custom grid w/ float
 Grid - a design sys used to build consistent interfaces.
@@ -263,3 +264,5 @@ Understanding...
     - apply filter to img 
     - bg vid covering entire section
     - using 'object-fit' prop
+- Form book section
+    - solid-color gradient
