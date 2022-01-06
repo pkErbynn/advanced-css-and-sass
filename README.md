@@ -266,3 +266,7 @@ Understanding...
     - using 'object-fit' prop
 - Form book section
     - solid-color gradient
+    - adjacent sibling selectors
+    - '::input-placeholder' pseudo-element
+    - :focus, :invalid, :placeholder-shouun & :checked pseudo-class
+    - custom radio buttons
