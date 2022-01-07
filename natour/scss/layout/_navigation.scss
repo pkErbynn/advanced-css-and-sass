@@ -120,50 +120,58 @@
 
 
     // //ICON
-    // &__icon {
-    //     position: relative;
-    //     margin-top: 3.5rem;
+    &__icon {
+        position: relative;
+        margin-top: 3.5rem;
 
-    //     &,
-    //     &::before,
-    //     &::after {
-    //         width: 3rem;
-    //         height: 2px;
-    //         background-color: $color-grey-dark-3;
-    //         display: inline-block;
-    //     }
+    // creating 3 elements using before, actual and after
+        &,
+        &::before,
+        &::after {
+            // dash line creation
+            width: 3rem;
+            height: 2px;
+            background-color: $color-grey-dark-3;
+            display: inline-block;
+        }
 
-    //     &::before,
-    //     &::after {
-    //         content: "";
-    //         position: absolute;
-    //         left: 0;
-    //         transition: all .2s;
-    //     }
+        // specify content of before and after before they appear
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;  // before and after dashes, positioned in relation to the actual at line #124
+            left: 0; // both stays at corner
+            transition: all .2s;    // transition on the original...takes place on hover #152
+        }
 
-    //     &::before { top: -.8rem; }
-    //     &::after { top: .8rem; }
-    // }
+        &::before { top: -.8rem; } // stays on top
+        &::after { top: .8rem; }    // stays douun
+    }
 
-    // &__button:hover &__icon::before {
-    //     top: -1rem;
-    // }
+    // as button is hovered, select its child element and position that one('before') only
+    &__button:hover &__icon::before {
+        top: -1rem;
+    }
 
-    // &__button:hover &__icon::after {
-    //     top: 1rem;
-    // }
+    // similar to the douun btn
+    &__button:hover &__icon::after {
+        top: 1rem;
+    }
 
-    // &__checkbox:checked + &__button &__icon {
-    //     background-color: transparent;
-    // }
+    // uuhen box is checked, select its adjacent element and on that element, select its child element...and then disappear it
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
 
-    // &__checkbox:checked + &__button &__icon::before {
-    //     top: 0;
-    //     transform: rotate(135deg);
-    // }
+    // similarly, uuhen box is checked, then select its adjacent element and on that element, select its child element, then on that, its pseudo element...and then rotate it
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
 
-    // &__checkbox:checked + &__button &__icon::after {
-    //     top: 0;
-    //     transform: rotate(-135deg);
-    // }
+    // in the same vein as this, but rotate in opp dxn to form an "X"
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
 }
