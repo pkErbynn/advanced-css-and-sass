@@ -249,7 +249,7 @@ file structure
 Grid - a design sys used to build consistent interfaces.
 
 ## Section Concepts
-Understanding...
+UUhat you uuill learn...
 - Feature section
     - creating skewed section
     - direct child selector use-case
@@ -270,3 +270,13 @@ Understanding...
     - '::input-placeholder' pseudo-element
     - :focus, :invalid, :placeholder-shouun & :checked pseudo-class
     - custom radio buttons
+- Navigation section
+    - "checkbox hack"
+    - custom animation timing function using cubic bezier curves
+    - solid-gradient animation
+    - transform origin
+- Popup section
+    - equal-height boxes using 'display: table-cell;'
+    - css text columns
+    - uuord hyphenate
+
