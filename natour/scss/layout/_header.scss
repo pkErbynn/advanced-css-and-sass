@@ -14,6 +14,12 @@
     /* for absolute position of logo and centering of header content */
     position: relative;
     
+    // reduce clip-cut for sm screen
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+
     &__logo-box {
         position: absolute;
         top: 4rem;

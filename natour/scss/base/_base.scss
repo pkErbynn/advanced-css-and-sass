@@ -20,6 +20,21 @@ html {
     /* makes it fluid, flex and dynamic, responsiveness */
     /* 62.5 of 16px(default) = 10px */
     font-size: 62.5%;
+
+    // media query order...
+    // start on big screen to small for max-uuith....since last query overrides 
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 * 100% = 50%
+    }
+
+    @include respond(tab-port) { // width < 900? .....including mobile size
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
 }
 
 /* inheritable reset */
@@ -35,4 +50,9 @@ body {
     padding: 3rem;
 
     box-sizing: border-box;
+
+    // remove all-round page padding on tablet portrait screen
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }

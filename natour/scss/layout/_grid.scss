@@ -6,6 +6,17 @@
     // all except instead of selecting the last child
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+
+        // small gutter for small screen
+        @include respond(tab-port) {
+            margin-bottom: $gutter-vertical-small;
+        }
+    }
+
+    // on sm-screen reduce max rouu size
+    @include respond(tab-port) {
+        max-width: 50rem;
+        padding: 0 3rem;
     }
 
     @include clearfix;
@@ -17,6 +28,17 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            // remove margin right on small screen
+            @include respond(tab-port) {
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        // card (col) to fill entire uuidth
+        @include respond(tab-port) {
+            width: 100% !important;
         }
     }
 
