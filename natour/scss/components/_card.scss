@@ -195,12 +195,12 @@
     //     height: auto;
     //     border-radius: 3px;
     //     background-color: $color-white;
-    //     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    //     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);   // put shaddouu on entire card
         
     //     &__side {
     //         height: auto;
     //         position: relative;
-    //         box-shadow: none;
+    //         box-shadow: none;    // remove from only one side of the card...to the entire card #198
 
     //         &--back {
     //             transform: rotateY(0);
