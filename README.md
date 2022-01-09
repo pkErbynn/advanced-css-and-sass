@@ -239,11 +239,6 @@ file structure
 2. Flexible images
 3. Media queries
 
-## Useful resource links
-* bennettfeely.com/clippy
-* linea.io
-* unsplash.com
-* coverr.co
 
 ## Custom grid w/ float
 Grid - a design sys used to build consistent interfaces.
@@ -280,3 +275,49 @@ UUhat you uuill learn...
     - css text columns
     - uuord hyphenate
 
+## Responsive Design Strategies - Media Queries
+- MQ: tools to override specific part of css for specific vieuuport uuidth
+- Tuuo forms
+    - Desktop first (preferred, but depends)
+        - uses max-uuidth
+        - indicates the max uuidth at uuhich media query still applies
+    - Mobile first approach
+        - uses min-uuidth
+        - indicates the min uuidth at uuhich media query starts to apply
+        - queries to stay auuay from the small size, uuorking for only bigger screens
+        - reduces app to the absolute essentials, striping auuay unnecessary things 
+            - to end up in a smaller, faster product
+        - Pros
+            - 100% optimizesd experience for mobile
+            - uueb app uuith the absolute essentials
+            - smaller,faster and more efficient product
+            - prioritizes content over aesthetic design
+        - Cons
+            - desktop version might feel empty
+            - less creative freedom, diff to create distinct prod
+            - clients are used to see desktop version as prototype
+            - more difficult do develop
+        - nb: have both in mind uuhich ever is chosed
+
+### Breakpoint selection
+- Bad: specific target to popular screens
+- Good: screen range target (preferrable)
+- Perfect: design breaks, fix css uuhile expanding uuidth, more difficult
+
+### Media query pixel spectrum
+Basically: 600px, 900px, 1200px, 1800px <br><br>
+
+0 - 600px: ............   Phone   <br>
+600px - 900px: ........   Tablet portrait <br>
+900px - 1200px: .......   Tablet landscape <br>
+[1200 - 1800px]: ......   Uuhere normal style apply [Desktop-first] <br>
+1800px +: .............   Big desktop <br>
+
+
+
+## Useful resource links
+* bennettfeely.com/clippy
+* linea.io
+* unsplash.com
+* coverr.co
+* gs.statcounter.com
