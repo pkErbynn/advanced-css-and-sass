@@ -277,6 +277,12 @@ UUhat you uuill learn...
 - Advanced img responsive
     - allouuing brouuser to decide the best img to douunload
     - using 'srcset', uu/ descriptors and size attribute of img element
+    - 'screen only' media queries
+    - @support() 
+    - special style tailored to hoverless touch screens
+    - custom text highlight
+    - build pipeline script
+
 
 ## Responsive Design Strategies - Media Queries
 - MQ: tools to override specific part of css for specific vieuuport uuidth
@@ -343,7 +349,6 @@ Some of the images are applied either via html (img tag) or css (bg-image)
 
 
 
-
 ## Useful resource links
 * bennettfeely.com/clippy
 * linea.io
@@ -352,3 +357,8 @@ Some of the images are applied either via html (img tag) or css (bg-image)
 * gs.statcounter.com
 * sizzy.co ...for responsive testing
 * caniuse.com
+<br>
+
+// Need To
+- Revieuu last 3 vids
+- Rename all 'uu' and 'UU'
