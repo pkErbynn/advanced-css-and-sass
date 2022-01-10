@@ -348,6 +348,9 @@ Some of the images are applied either via html (img tag) or css (bg-image)
     - application: line #368 (in .html)
 
 
+## Demo
+[![Demo Doccou alpha]()](https://j.gifs.com/57VlGA.gif)
+
 
 ## Useful resource links
 * bennettfeely.com/clippy
@@ -361,5 +364,4 @@ Some of the images are applied either via html (img tag) or css (bg-image)
 
 // Need To
 - Review last 3 vids
-- Rename all 'w' and 'w'
 - Screenshot page

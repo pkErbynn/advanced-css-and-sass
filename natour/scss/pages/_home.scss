@@ -18,7 +18,7 @@
     background-size: cover;
 
     transform: skewY(-7deg);    //instead of using clip-path
-    // margin-top: -10rem;
+    margin-top: -10rem;     // move section to prevent section space
 
     // slanting only inner direct child children
     & > * {
