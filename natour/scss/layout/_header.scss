@@ -1,10 +1,10 @@
 .header {
-    height: 95vh;
+    height: 85vh; // depends on #18
     background-image: linear-gradient(
         to right bottom,
         $color-primary-light,
         $color-primary-dark), 
-        url(../img/hero.jpg);
+        url(../img/hero-small.jpg);;
     background-size: cover;
     background-position: top;
 
@@ -14,6 +14,25 @@
     /* for absolute position of logo and centering of header content */
     position: relative;
     
+    // future support...if it support, apply (override) else keep the initial css #11, #10 and #2
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        height: 95vh; // override
+    }
+
+    // resolution media queries (2x-res min + above non-mobile screen)...in order to select specific img for that
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), // or
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),    // first or 2nd or 3rd condition
+    only screen and (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)
+            ),
+            url(../img/hero.jpg);
+    }
+
     // reduce clip-cut for sm screen
     @include respond(phone) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);

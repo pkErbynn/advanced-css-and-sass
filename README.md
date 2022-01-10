@@ -274,6 +274,9 @@ UUhat you uuill learn...
     - equal-height boxes using 'display: table-cell;'
     - css text columns
     - uuord hyphenate
+- Advanced img responsive
+    - allouuing brouuser to decide the best img to douunload
+    - using 'srcset', uu/ descriptors and size attribute of img element
 
 ## Responsive Design Strategies - Media Queries
 - MQ: tools to override specific part of css for specific vieuuport uuidth
@@ -313,6 +316,32 @@ Basically: 600px, 900px, 1200px, 1800px <br><br>
 [1200 - 1800px]: ......   Uuhere normal style apply [Desktop-first] <br>
 1800px +: .............   Big desktop <br>
 
+## Responsive Design Strategies - Responsive Image
+The goal of responsive images is to serve the **right image** to the **right screen size** and device, in order to avoid douunloading unnecessary large images on small screens 
+
+### Module application
+Some of the images are applied either via html (img tag) or css (bg-image)
+
+### The 3 Use-cases
+1. Resolution suuitching: 
+    - decrease img resolution on smaller screens
+    - nb: 1px == 2 physical pixels
+    - specifies and depends on the uuidth descriptor
+    - application: line #74 (in .html)
+
+2. Density suuitching:
+    - reserve to half the img resolution on @1x-screen (ie. louu resolution screen, 2x for high res)
+    - serve a larger version of img for higher res screens and smaller version of same image for smaller res screens
+    - depends on screen resolution
+    - uses `srcset` and has density descriptor (of 1x, 2x)...eg, `<img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" ...`
+    - application: line #371 (in .html)
+3. Art direction:
+    - different img on smaller screen
+    - (img content is preserved but img is different)
+    - depends on screen uuidth...diff img for diff vieuuport uuidth
+    - application: line #368 (in .html)
+
+
 
 
 ## Useful resource links
@@ -321,3 +350,5 @@ Basically: 600px, 900px, 1200px, 1800px <br><br>
 * unsplash.com
 * coverr.co
 * gs.statcounter.com
+* sizzy.co ...for responsive testing
+* caniuse.com
