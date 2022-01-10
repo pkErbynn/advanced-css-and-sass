@@ -349,7 +349,7 @@ Some of the images are applied either via html (img tag) or css (bg-image)
 
 
 ## Demo
-[![Demo Doccou alpha]()](https://j.gifs.com/57VlGA.gif)
+![Demo A](https://j.gifs.com/57VlGA.gif)
 
 
 ## Useful resource links
