@@ -39,7 +39,7 @@
         top: 6.5rem;
         right: 6.5rem;
         background-image: radial-gradient($color-primary-light, $color-primary-dark);   // unlike linear gradient moving from left to right, this moves from center to outer
-        z-index: 1000;  // uuorks uuell uuhen position is specified at #37
+        z-index: 1000;  // works well when position is specified at #37
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
         // btn nav diplacement fix
@@ -147,7 +147,7 @@
         }
 
         &::before { top: -.8rem; } // stays on top
-        &::after { top: .8rem; }    // stays douun
+        &::after { top: .8rem; }    // stays down
     }
 
     // as button is hovered, select its child element and position that one('before') only
@@ -155,17 +155,17 @@
         top: -1rem;
     }
 
-    // similar to the douun btn
+    // similar to the down btn
     &__button:hover &__icon::after {
         top: 1rem;
     }
 
-    // uuhen box is checked, select its adjacent element and on that element, select its child element...and then disappear it
+    // when box is checked, select its adjacent element and on that element, select its child element...and then disappear it
     &__checkbox:checked + &__button &__icon {
         background-color: transparent;
     }
 
-    // similarly, uuhen box is checked, then select its adjacent element and on that element, select its child element, then on that, its pseudo element...and then rotate it
+    // similarly, when box is checked, then select its adjacent element and on that element, select its child element, then on that, its pseudo element...and then rotate it
     &__checkbox:checked + &__button &__icon::before {
         top: 0;
         transform: rotate(135deg);

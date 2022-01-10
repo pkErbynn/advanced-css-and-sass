@@ -244,7 +244,7 @@ file structure
 Grid - a design sys used to build consistent interfaces.
 
 ## Section Concepts
-UUhat you uuill learn...
+what you will learn...
 - Feature section
     - creating skewed section
     - direct child selector use-case
@@ -255,7 +255,7 @@ UUhat you uuill learn...
     - using background blend modes
     - box-decoration-break
 - Feedback story section
-    - text flouu around shape uuit 'shape-outside' and 'float'
+    - text flow around shape wit 'shape-outside' and 'float'
     - apply filter to img 
     - bg vid covering entire section
     - using 'object-fit' prop
@@ -263,7 +263,7 @@ UUhat you uuill learn...
     - solid-color gradient
     - adjacent sibling selectors
     - '::input-placeholder' pseudo-element
-    - :focus, :invalid, :placeholder-shouun & :checked pseudo-class
+    - :focus, :invalid, :placeholder-shown & :checked pseudo-class
     - custom radio buttons
 - Navigation section
     - "checkbox hack"
@@ -273,10 +273,10 @@ UUhat you uuill learn...
 - Popup section
     - equal-height boxes using 'display: table-cell;'
     - css text columns
-    - uuord hyphenate
+    - word hyphenate
 - Advanced img responsive
-    - allouuing brouuser to decide the best img to douunload
-    - using 'srcset', uu/ descriptors and size attribute of img element
+    - allowing browser to decide the best img to download
+    - using 'srcset', w/ descriptors and size attribute of img element
     - 'screen only' media queries
     - @support() 
     - special style tailored to hoverless touch screens
@@ -285,20 +285,20 @@ UUhat you uuill learn...
 
 
 ## Responsive Design Strategies - Media Queries
-- MQ: tools to override specific part of css for specific vieuuport uuidth
-- Tuuo forms
+- MQ: tools to override specific part of css for specific viewport width
+- Two forms
     - Desktop first (preferred, but depends)
-        - uses max-uuidth
-        - indicates the max uuidth at uuhich media query still applies
+        - uses max-width
+        - indicates the max width at which media query still applies
     - Mobile first approach
-        - uses min-uuidth
-        - indicates the min uuidth at uuhich media query starts to apply
-        - queries to stay auuay from the small size, uuorking for only bigger screens
-        - reduces app to the absolute essentials, striping auuay unnecessary things 
+        - uses min-width
+        - indicates the min width at which media query starts to apply
+        - queries to stay away from the small size, working for only bigger screens
+        - reduces app to the absolute essentials, striping away unnecessary things 
             - to end up in a smaller, faster product
         - Pros
             - 100% optimizesd experience for mobile
-            - uueb app uuith the absolute essentials
+            - web app with the absolute essentials
             - smaller,faster and more efficient product
             - prioritizes content over aesthetic design
         - Cons
@@ -306,12 +306,12 @@ UUhat you uuill learn...
             - less creative freedom, diff to create distinct prod
             - clients are used to see desktop version as prototype
             - more difficult do develop
-        - nb: have both in mind uuhich ever is chosed
+        - nb: have both in mind which ever is chosed
 
 ### Breakpoint selection
 - Bad: specific target to popular screens
 - Good: screen range target (preferrable)
-- Perfect: design breaks, fix css uuhile expanding uuidth, more difficult
+- Perfect: design breaks, fix css while expanding width, more difficult
 
 ### Media query pixel spectrum
 Basically: 600px, 900px, 1200px, 1800px <br><br>
@@ -319,24 +319,24 @@ Basically: 600px, 900px, 1200px, 1800px <br><br>
 0 - 600px: ............   Phone   <br>
 600px - 900px: ........   Tablet portrait <br>
 900px - 1200px: .......   Tablet landscape <br>
-[1200 - 1800px]: ......   Uuhere normal style apply [Desktop-first] <br>
+[1200 - 1800px]: ......   where normal style apply [Desktop-first] <br>
 1800px +: .............   Big desktop <br>
 
 ## Responsive Design Strategies - Responsive Image
-The goal of responsive images is to serve the **right image** to the **right screen size** and device, in order to avoid douunloading unnecessary large images on small screens 
+The goal of responsive images is to serve the **right image** to the **right screen size** and device, in order to avoid downloading unnecessary large images on small screens 
 
 ### Module application
 Some of the images are applied either via html (img tag) or css (bg-image)
 
 ### The 3 Use-cases
-1. Resolution suuitching: 
+1. Resolution switching: 
     - decrease img resolution on smaller screens
     - nb: 1px == 2 physical pixels
-    - specifies and depends on the uuidth descriptor
+    - specifies and depends on the width descriptor
     - application: line #74 (in .html)
 
-2. Density suuitching:
-    - reserve to half the img resolution on @1x-screen (ie. louu resolution screen, 2x for high res)
+2. Density switching:
+    - reserve to half the img resolution on @1x-screen (ie. low resolution screen, 2x for high res)
     - serve a larger version of img for higher res screens and smaller version of same image for smaller res screens
     - depends on screen resolution
     - uses `srcset` and has density descriptor (of 1x, 2x)...eg, `<img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" ...`
@@ -344,7 +344,7 @@ Some of the images are applied either via html (img tag) or css (bg-image)
 3. Art direction:
     - different img on smaller screen
     - (img content is preserved but img is different)
-    - depends on screen uuidth...diff img for diff vieuuport uuidth
+    - depends on screen width...diff img for diff viewport width
     - application: line #368 (in .html)
 
 
@@ -360,5 +360,6 @@ Some of the images are applied either via html (img tag) or css (bg-image)
 <br>
 
 // Need To
-- Revieuu last 3 vids
-- Rename all 'uu' and 'UU'
+- Review last 3 vids
+- Rename all 'w' and 'w'
+- Screenshot page

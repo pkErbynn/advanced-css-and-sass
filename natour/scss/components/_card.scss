@@ -66,12 +66,12 @@
         // applies to all card pictures
         background-size: cover;     //img covers the empty small space thus need height
         height: 23rem;
-        background-blend-mode: screen;  // blend bg image uuit gradient color
+        background-blend-mode: screen;  // blend bg image wit gradient color
 
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);  // -webkit prefix to function in other unsupported browsers
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);  // should come after the -webkit
         
-        // since clip path breaks the hidden overflouu, need to be set manually
+        // since clip path breaks the hidden overflow, need to be set manually
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
         
@@ -185,55 +185,52 @@
     }
 
 
+    //@include respond(tab-port) {
+    @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {     // wHEN cannot hover
 
-
-
-    // //@include respond(tab-port) {
-    // @media only screen and (max-width: 56.25em),
-    //         only screen and (hover: none) {
-
-    //     height: auto;
-    //     border-radius: 3px;
-    //     background-color: $color-white;
-    //     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);   // put shaddouu on entire card
+        height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);   // put shaddow on entire card
         
-    //     &__side {
-    //         height: auto;
-    //         position: relative;
-    //         box-shadow: none;    // remove from only one side of the card...to the entire card #198
+        &__side {
+            height: auto;
+            position: relative;
+            box-shadow: none;    // remove from only one side of the card...to the entire card #198
 
-    //         &--back {
-    //             transform: rotateY(0);
-    //             clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-    //         }
-    //     }
+            &--back {
+                transform: rotateY(0);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
     
-    //     &:hover &__side--front {
-    //         transform: rotateY(0);
-    //     }
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
 
     
-    //     &__details {
-    //         padding: 1rem 3rem;
-    //     }
+        &__details {
+            padding: 1rem 3rem;
+        }
 
-    //     // FRONT SIDE STYLING
-    //     &__cta {
-    //         position: relative;
-    //         top: 0%;
-    //         left: 0;
-    //         transform: translate(0);
-    //         width: 100%;
-    //         padding: 7rem 4rem 4rem 4rem;
-    //     }
+        // FRONT SIDE STYLING
+        &__cta {
+            position: relative;
+            top: 0%;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            padding: 7rem 4rem 4rem 4rem;
+        }
 
-    //     &__price-box {
-    //         margin-bottom: 3rem;
-    //     }
+        &__price-box {
+            margin-bottom: 3rem;
+        }
 
-    //     &__price-value {
-    //         font-size: 4rem;
-    //     }
-    // }
+        &__price-value {
+            font-size: 4rem;
+        }
+    }
 
 }

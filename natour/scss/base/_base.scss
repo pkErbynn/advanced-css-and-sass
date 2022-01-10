@@ -22,7 +22,7 @@ html {
     font-size: 62.5%;
 
     // media query order...
-    // start on big screen to small for max-uuith....since last query overrides 
+    // start on big screen to small for max-with....since last query overrides 
 
     @include respond(tab-land) { // width < 1200?
         font-size: 56.25%; //1 rem = 9px, 9/16 * 100% = 50%

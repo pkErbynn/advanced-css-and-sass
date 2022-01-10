@@ -13,7 +13,7 @@
         }
     }
 
-    // on sm-screen reduce max rouu size
+    // on sm-screen reduce max row size
     @include respond(tab-port) {
         max-width: 50rem;
         padding: 0 3rem;
@@ -36,7 +36,7 @@
             }
         }
 
-        // card (col) to fill entire uuidth
+        // card (col) to fill entire width
         @include respond(tab-port) {
             width: 100% !important;
         }

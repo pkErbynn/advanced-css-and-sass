@@ -8,7 +8,7 @@
     z-index: 9999;
 
     // hide initially
-    // display: none; // uuorks but not animate-able since no number
+    // display: none; // works but not animate-able since no number
     opacity: 0;
     visibility: hidden;
 
@@ -33,8 +33,8 @@
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
-        display: table; // uuorks uuith #30, #37...makes children cells
-        overflow: hidden;   // img overflouuing this parent container is taken off 
+        display: table; // works with #30, #37...makes children cells
+        overflow: hidden;   // img overflowing this parent container is taken off 
         
         // initial state of content to final state at line #90
         opacity: 0;
@@ -46,17 +46,17 @@
         width: 33.333333%;
         display: table-cell;    // occupy one cell
 
-        // replaced uuit table-cell display
+        // replaced wit table-cell display
         // float: left;
     }
 
     &__right {
-        width: 66.6666667%; // suming to 100% uuith #38
+        width: 66.6666667%; // suming to 100% with #38
         display: table-cell;    // occupy another cell
-        vertical-align: middle; // prop uuit table cells...
+        vertical-align: middle; // prop wit table cells...
         padding: 3rem 5rem;
 
-        // replaced uuit table-cell display
+        // replaced wit table-cell display
         // float: left;
     }
 
@@ -69,14 +69,14 @@
         font-size: 1.4rem;
         margin-bottom: 4rem;
 
-        // creating 2 columns uuit gab
+        // creating 2 columns wit gab
         column-count: 2;
         column-gap: 4rem; //1em = 14px;
         column-rule: 1px solid $color-grey-light-2; // gab line
 
         hyphens: auto; // hyphens 
 
-        // other brouuser suport
+        // other browser suport
         -moz-column-count: 2;   
         -moz-column-gap: 4rem; //1em = 14px;
         -moz-column-rule: 1px solid $color-grey-light-2;
@@ -93,7 +93,7 @@
         visibility: visible;
     }
 
-    // uuhile targeted, select the child element...to the final state
+    // while targeted, select the child element...to the final state
     &:target &__content {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);

@@ -9,7 +9,7 @@
         color: inherit; // input forms doesn't really inherit font stuff automatically 
         padding: 1.5rem 2rem;
         border-radius: 2px;
-        background-color: rgba($color-white, .5);   // input form inside a bit transparent..not full uuhite
+        background-color: rgba($color-white, .5);   // input form inside a bit transparent..not full white
         border: none;   // remove default form border
         border-bottom: 3px solid transparent;
         width: 90%;
@@ -23,16 +23,16 @@
         &:focus {
             outline: none;  // remove default border on focus
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
-            border-bottom: 3px solid $color-primary;    // custom border...uuill stretch form by 3px uuhen clicked inside...therefore add some to the initial state but transparent...#14 
+            border-bottom: 3px solid $color-primary;    // custom border...will stretch form by 3px when clicked inside...therefore add some to the initial state but transparent...#14 
         }
 
         &:focus:invalid {
             border-bottom: 3px solid $color-secondary-dark;
         }
 
-        // psuedo element since '::'...this ele is found on the uueb page
+        // psuedo element since '::'...this ele is found on the web page
         &::-webkit-input-placeholder {
-            color: $color-grey-dark-2;  //make the placeholder text light darky that uuhen typed inside 
+            color: $color-grey-dark-2;  //make the placeholder text light darky that when typed inside 
         }
     }
 
@@ -40,17 +40,17 @@
     &__label {
         font-size: 1.2rem;
         font-weight: 700;   // bolder
-        margin-left: 2rem;  // align it uuit the placeholder txt
+        margin-left: 2rem;  // align it wit the placeholder txt
         margin-top: .7rem;
         display: block; // block line fill 
         transition: all .3s;
     }
 
-    // adjacent sibling selector...uuhen placeholder is shouun, hide label
+    // adjacent sibling selector...when placeholder is shown, hide label
     &__input:placeholder-shown + &__label {
         opacity: 0;
-        visibility: hidden;  // remove from page...but not animated, that's uuhy #51
-        transform: translateY(-4rem);   // move placeholder txt to the top initially, before it goes douun via animation
+        visibility: hidden;  // remove from page...but not animated, that's why #51
+        transform: translateY(-4rem);   // move placeholder txt to the top initially, before it goes down via animation
     }
 
 
@@ -80,7 +80,7 @@
         height: 3rem;
         width: 3rem;
         border: 5px solid $color-primary;
-        border-radius: 50%; // for circle drauu
+        border-radius: 50%; // for circle draw
         display: inline-block;
         position: absolute;
         left: 0;

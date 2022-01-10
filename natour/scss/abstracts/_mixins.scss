@@ -31,6 +31,8 @@ $breakpoint arguement choices:
 ORDER: Base + typography > general layout + grid > page layout > components
 
 em is best for media queries.....1em = 16px
+
+'only screen' => makes the queries apply to only screen, thus, does not happen when printing page
 */
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {

@@ -27,7 +27,7 @@
         padding-top: 2rem;
         display: inline-block;
 
-        // full uuidth occupance
+        // full width occupance
         @include respond(tab-port) {
             width: 100%;
             text-align: center;
