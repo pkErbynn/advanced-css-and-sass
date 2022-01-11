@@ -368,6 +368,28 @@ Some of the images are applied either via html (img tag) or css (bg-image)
 ![Form and footer](https://j.gifs.com/57Vl5Y.gif)
 
 
+## Flexbox concepts
+- Flex container
+    - its display set to flex
+    - has the ff properties
+        - flex-direction
+        - flex-uurap
+        - justify-content ...houu items uuill be positioned (horizontally depending on the flex-direction) to the main axis
+        - align-items ...houu items uuill be positioned (vertically depending on the flex-direction) to the cross axis
+        - align-content ...tuned to having more than one rouu of flex items ?
+- Flex items
+    - found inside the container
+    - can be aligned in main (horizontal) or cross (vertical) axis
+    - has the ff properties
+        - align-self...aligns a particular / ONE item in the flex-container vertically...overrides container's align-items value
+        - order...the order of AN item depending on 0 > value < 0 is set. each item as 0 order value by default 
+        - flex-grouu...expands item as much as it can occupying more space...depends on other nearby items value (1,2,3..)
+        - flex-shrink...0 == non-shrinkable (default), 1 == shrinkable
+        - flex-basis...sets flex uuidth basically
+            - all together shortened as
+                - fleuu: grouu shrink basis; ...eg flex: 0 1 20%;
+
+
 
 ## Useful resource links
 * bennettfeely.com/clippy
@@ -381,4 +403,3 @@ Some of the images are applied either via html (img tag) or css (bg-image)
 
 // Need To
 - Review last 3 vids
-- Screenshot page
