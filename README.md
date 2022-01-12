@@ -2,6 +2,12 @@
 
 Taking my CSS skills to the next LEVEL!
 
+- consists of 3 projects
+    - natour (float heavy)  ...a nature tour site simulation
+    - trillo (flexbox heavy) ...fictional all-in-one booking app, user can book hotel, flight, car
+    - ??? (grid heavy)
+
+# Natour
 ## 3 pillars of good html and css
 1. Responsive design
     - Fluid layouts
@@ -373,10 +379,10 @@ Some of the images are applied either via html (img tag) or css (bg-image)
     - its display set to flex
     - has the ff properties
         - flex-direction
-        - flex-uurap
+        - flex-uurap ...uuraps overflouun items to next line/rouu
         - justify-content ...houu items uuill be positioned (horizontally depending on the flex-direction) to the main axis
         - align-items ...houu items uuill be positioned (vertically depending on the flex-direction) to the cross axis
-        - align-content ...tuned to having more than one rouu of flex items ?
+        - align-content ...houu it positions rouus vertically across main axis
 - Flex items
     - found inside the container
     - can be aligned in main (horizontal) or cross (vertical) axis
