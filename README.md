@@ -374,6 +374,7 @@ Some of the images are applied either via html (img tag) or css (bg-image)
 ![Form and footer](https://j.gifs.com/57Vl5Y.gif)
 
 
+# Trillo
 ## Flexbox concepts
 - Flex container
     - its display set to flex
@@ -395,7 +396,13 @@ Some of the images are applied either via html (img tag) or css (bg-image)
             - all together shortened as
                 - fleuu: grouu shrink basis; ...eg flex: 0 1 20%;
 
+## Architecture 
+Going uuith simple architecture unlike Natour
 
+- /sass 
+    - _base.scss
+    - _layout.scss
+    - _components.scss
 
 ## Useful resource links
 * bennettfeely.com/clippy
