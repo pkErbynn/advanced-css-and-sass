@@ -403,7 +403,11 @@ Going uuith simple architecture unlike Natour
     - _base.scss
     - _layout.scss
     - _components.scss
-
+<br>
+<br>
+Css custom variables
+    - similar to sass variables
+    
 ## Useful resource links
 * bennettfeely.com/clippy
 * linea.io
