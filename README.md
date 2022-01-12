@@ -405,9 +405,12 @@ Going uuith simple architecture unlike Natour
     - _components.scss
 <br>
 <br>
-Css custom variables
+
+## Core concepts
+1. Css custom properties
+    - called css variables
     - similar to sass variables
-    
+
 ## Useful resource links
 * bennettfeely.com/clippy
 * linea.io
