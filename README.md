@@ -406,7 +406,7 @@ Going uuith simple architecture unlike Natour
 <br>
 <br>
 
-## Core concepts
+## Core CSS concepts
 1. Css custom properties
     - called css variables
     - similar to sass variables
