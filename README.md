@@ -421,6 +421,7 @@ Going with simple architecture unlike Natour
         - better alternative, recommended over icon font
         - App support: IcoMoon
             - contains icon sprite
+        - NB: only shows on servers
 3. advanced flexbox alignment techniques
     - justify-content
     - align-items
