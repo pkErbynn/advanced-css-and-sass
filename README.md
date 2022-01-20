@@ -380,24 +380,24 @@ Some of the images are applied either via html (img tag) or css (bg-image)
     - its display set to flex
     - has the ff properties
         - flex-direction
-        - flex-uurap ...uuraps overflouun items to next line/rouu
-        - justify-content ...houu items uuill be positioned (horizontally depending on the flex-direction) to the main axis
-        - align-items ...houu items uuill be positioned (vertically depending on the flex-direction) to the cross axis
-        - align-content ...houu it positions rouus vertically across main axis
+        - flex-wrap ...wraps overflown items to next line/row
+        - justify-content ...how items will be positioned (horizontally depending on the flex-direction) to the main axis
+        - align-items ...how items will be positioned (vertically depending on the flex-direction) to the cross axis
+        - align-content ...how it positions rows vertically across main axis
 - Flex items
     - found inside the container
     - can be aligned in main (horizontal) or cross (vertical) axis
     - has the ff properties
         - align-self...aligns a particular / ONE item in the flex-container vertically...overrides container's align-items value
         - order...the order of AN item depending on 0 > value < 0 is set. each item as 0 order value by default 
-        - flex-grouu...expands item as much as it can occupying more space...depends on other nearby items value (1,2,3..)
+        - flex-grow...expands item as much as it can occupying more space...depends on other nearby items value (1,2,3..)
         - flex-shrink...0 == non-shrinkable (default), 1 == shrinkable
-        - flex-basis...sets flex uuidth basically
+        - flex-basis...sets flex width basically
             - all together shortened as
-                - fleuu: grouu shrink basis; ...eg flex: 0 1 20%;
+                - flew: grow shrink basis; ...eg flex: 0 1 20%;
 
 ## Architecture 
-Going uuith simple architecture unlike Natour
+Going with simple architecture unlike Natour
 
 - /sass 
     - _base.scss
@@ -413,14 +413,20 @@ Going uuith simple architecture unlike Natour
 2. use SVG vs IconFont
     - IconFont
         - like images using a font
-        - fail often that uuould think uuith brouuser displayin' a black square
+        - fail often that would think with browser displayin' a black square
         - not screen reader supportive
     - SVG
         - === Scalable Vector Graphics
-        - uuay of uuriting vector graphics uu/ code
+        - way of writing vector graphics w/ code
         - better alternative, recommended over icon font
         - App support: IcoMoon
             - contains icon sprite
+3. advanced flexbox alignment techniques
+    - justify-content
+    - align-items
+    - align-self
+    - flex
+
 
 ## Useful resource links
 * bennettfeely.com/clippy
