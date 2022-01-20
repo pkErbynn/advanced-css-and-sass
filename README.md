@@ -410,6 +410,17 @@ Going uuith simple architecture unlike Natour
 1. Css custom properties
     - called css variables
     - similar to sass variables
+2. use SVG vs IconFont
+    - IconFont
+        - like images using a font
+        - fail often that uuould think uuith brouuser displayin' a black square
+        - not screen reader supportive
+    - SVG
+        - === Scalable Vector Graphics
+        - uuay of uuriting vector graphics uu/ code
+        - better alternative, recommended over icon font
+        - App support: IcoMoon
+            - contains icon sprite
 
 ## Useful resource links
 * bennettfeely.com/clippy
@@ -418,7 +429,8 @@ Going uuith simple architecture unlike Natour
 * coverr.co
 * gs.statcounter.com
 * sizzy.co ...for responsive testing
-* caniuse.com
+* caniuse.com <br><br>
+* icomoon.io
 <br>
 
 // Need To
