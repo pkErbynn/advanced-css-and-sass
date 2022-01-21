@@ -14,15 +14,15 @@
 }
 
 .header {
-    font-size: 1.4rem;
+    font-size: 1.4rem;  // inherited by search bar font
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--line);
 
-    // display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-
+    display: flex;  // lays logo, search and user notifiction side-by-side
+    justify-content: space-between;
+    align-items: center;    // vertical align 
+ 
 //     @media only screen and (max-width: $bp-smallest) {
 //         flex-wrap: wrap;
 //         align-content: space-around;

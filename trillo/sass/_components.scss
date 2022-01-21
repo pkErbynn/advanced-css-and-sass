@@ -8,11 +8,11 @@
 ////////////////////////////////////////
 // SEARCH
 .search {
-    // flex: 0 0 40%;
+    flex: 0 0 40%;
 
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center; // centers at across/vertical axis 
+    justify-content: center;     // centers at main/horizontal axis 
 
     // @media only screen and (max-width: $bp-smallest) {
     //     order: 1;
@@ -21,50 +21,53 @@
     // }
 
     &__input {
-        // font-family: inherit;
-        // font-size: inherit;
-        // color: inherit;
-        // background-color: var(--color-grey-light-2);
-        // border: none;
-        // padding: .7rem 2rem;
-        // border-radius: 100px;
-        // width: 90%;
-        // transition: all .2s;
-        // margin-right: -3.25rem;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: var(--color-grey-light-2);
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all .2s;
+        margin-right: -3.25rem;    // ship input to button to overlap
 
-        // &:focus {
-        //     outline: none;
-        //     width: 100%;
-        //     background-color: var(--color-grey-light-3);
-        // }
+        // increases search width when focused
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-3);
+        }
 
-        // &::-webkit-input-placeholder {
-        //     font-weight: 100;
-        //     color: var(--color-grey-light-4);
-        // }
+        // webkit = chrome + safari browsers
+        &::-webkit-input-placeholder {  
+            font-weight: 100;
+            color: var(--color-grey-light-4);
+        }
     }
 
-    // &__input:focus + &__button {
-    //     background-color: var(--color-grey-light-3);
-    // }
+    // adjascent sibling...when input is focused, then do this on the adjascent sibling 
+    &__input:focus + &__button {
+        background-color: var(--color-grey-light-3);
+    }
 
     &__button {
-        // border: none;
-        // background-color: var(--color-grey-light-2);
+        border: none;
+        background-color: var(--color-grey-light-2);
 
-        // &:focus {
-        //     outline: none;
-        // }
+        &:focus {
+            outline: none;
+        }
 
-        // &:active {
-        //     transform: translateY(2px);
-        // }
+        &:active {
+            transform: translateY(2px);
+        }
     }
 
     &__icon {
         height: 2rem;
         width: 2rem;
-        // fill: var(--color-grey-dark-3);
+        fill: var(--color-grey-dark-3); // change svg color
     }
 }
 
@@ -72,47 +75,52 @@
 ////////////////////////////////////////
 // USER NAVIGATION
 .user-nav {
-    // align-self: stretch;
+    align-self: stretch; // have same height as header
     
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
 
-    // & > * {
-    //     padding: 0 2rem;
-    //     cursor: pointer;
-    //     height: 100%;
-    //     display: flex;
-    //     align-items: center;
-    // }
+    // to all direct children
+    & > * {
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%;   // stretch heigt to header
+        display: flex;
+        align-items: center;
+    }
 
-    // & > *:hover {
-    //     background-color: var(--color-grey-light-2);
-    // }
+    // direct children hovered
+    & > *:hover {
+        background-color: var(--color-grey-light-2);
+    }
 
     &__icon-box {
-        // position: relative;
+        position: relative; // for positioning at #116
     }
 
     &__icon {
         height: 2.25rem;
         width: 2.25rem;
-        // fill: var(--color-grey-dark-2);
+        fill: var(--color-grey-dark-2);
     }
 
     &__notification {
-    //     font-size: .8rem;
-    //     height: 1.75rem;
-    //     width: 1.75rem;
-    //     border-radius: 50%;
-    //     background-color: var(--color-primary);
-    //     color: #fff;
-    //     position: absolute;
-    //     top: 1.5rem;
-    //     right: 1.1rem;
+        font-size: .8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        color: #fff;
 
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
+        // NB: for strict positioning, use positioning
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
+
+        // center number in red circle
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__user-photo {
