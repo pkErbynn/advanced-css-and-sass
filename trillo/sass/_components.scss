@@ -131,3 +131,128 @@
 
 }
 
+
+////////////////////////////////////////
+// SIDE NAVIGATION
+.side-nav {
+    font-size: 1.4rem;
+    list-style: none;
+    margin-top: 3.5rem;
+
+    // @media only screen and (max-width: $bp-medium) {
+    //     display: flex;
+    //     margin: 0;
+    // }
+
+    &__item {
+        position: relative; // used with #163
+
+        &:not(:last-child) {
+            margin-bottom: .5rem;
+
+            // @media only screen and (max-width: $bp-medium) {
+            //     margin: 0;
+            // }
+        }
+
+        // @media only screen and (max-width: $bp-medium) {
+        //     flex: 1;
+        // }
+    }
+
+    // a style design before/in front of side-nav item
+    &__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: var(--color-primary);
+
+        // initial state of hover animation
+        transform: scaleY(0);
+        // transform-origin: bottom;    // center by default even when unspecified 
+        // different animation timing function
+        transition: transform .2s,
+                    width .4s cubic-bezier(1,0,0,1) .2s, // .2 cus with start imm after heigth effect 
+                    background-color .1s;
+    }
+
+    &__item:hover::before,
+    &__item--active::before {   // select a menu by default...hover is same as the active state
+        transform: scaleY(1);
+        width: 100%;
+    }
+
+    // give color when click 
+    &__item:active::before {
+        background-color: var(--color-primary-light);
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: var(--color-grey-light-1);
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding: 1.5rem 3rem;
+
+        position: relative;
+        z-index: 10; // doesn't work without relative position #198
+
+        // align icon and text vertically
+        display: flex;
+        align-items: center;
+
+        // @media only screen and (max-width: $bp-medium) {
+        //     justify-content: center;
+        //     padding: 2rem;
+        // }
+
+        // @media only screen and (max-width: $bp-small) {
+        //     flex-direction: column;
+        //     padding: 1.5rem .5rem;
+        // }
+    }
+
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        margin-right: 2rem;
+        fill: currentColor;  // color of parent el
+
+        // @media only screen and (max-width: $bp-small) {
+        //     margin-right: 0;
+        //     margin-bottom: .7rem;
+        //     width: 1.5rem;
+        //     height: 1.5rem;
+        // }
+    }
+}
+
+
+////////////////////////////////////////
+// LEGAL TEXT
+.legal {
+    font-size: 1.2rem;
+    color: var(--color-grey-light-4);
+    text-align: center;
+    padding: 2.5rem;
+
+    // @media only screen and (max-width: $bp-medium) {
+    //     display: none;
+    // }
+}
+
+
+////////////////////////////////////////
+// GALLERY
+.gallery {
+    // display: flex;
+
+    // &__photo {
+    //     width: 100%;
+    //     display: block;
+    // }
+}

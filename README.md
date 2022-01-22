@@ -427,7 +427,10 @@ Going with simple architecture unlike Natour
     - align-items
     - align-self
     - flex
-
+4. navigation
+    - using 'scaleY' and multi properties to create a creative hover effect
+    - how & why to use the `currentColorCSS` var
+    - using flex alignment techiques: `flex-direction`, `justify-content` and `align-items`
 
 ## Useful resource links
 * bennettfeely.com/clippy

@@ -43,9 +43,14 @@
 
     flex: 0 0 18%;  //..."uuon't grouu" "uuont's shrink" "18% uuidth coverage" 
 
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
+    // spacing out sidebar-items and legal text
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    // Test
+    height: 80rem;
+
 }
 
 .hotel-view {
