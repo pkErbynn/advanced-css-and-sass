@@ -59,12 +59,12 @@
     flex: 1;    //...grouu for single value....."1" == "grouu to cover the entire rest of the uuidth on the right"
 }
 
-// .detail {
-//     font-size: 1.4rem;
-//     display: flex;
-//     padding: 4.5rem;
-//     background-color: var(--color-grey-light-1);
-//     border-bottom: var(--line);
+.detail {
+    font-size: 1.4rem;
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
 
 //     @media only screen and (max-width: $bp-medium) {
 //         padding: 3rem;
@@ -73,14 +73,14 @@
 //     @media only screen and (max-width: $bp-small) {
 //         flex-direction: column;
 //     }
-// }
+}
 
-// .description {
-//     background-color: #fff;
-//     box-shadow: var(--shadow-light);
-//     padding: 3rem;
-//     flex: 0 0 60%;
-//     margin-right: 4.5rem;
+.description {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    flex: 0 0 60%;  // when basis is determined, the rest usually goes to zeros 
+    margin-right: 4.5rem;
 
 //     @media only screen and (max-width: $bp-medium) {
 //         padding: 2rem;
@@ -91,12 +91,12 @@
 //         margin-right: 0;
 //         margin-bottom: 3rem;
 //     }
-// }
+}
 
-// .user-reviews {
-//     flex: 1;
+.user-reviews {
+    flex: 1;    // to occupy the rest of the space wrt line #83
 
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

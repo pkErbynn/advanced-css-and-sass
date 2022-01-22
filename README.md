@@ -435,7 +435,10 @@ Going with simple architecture unlike Natour
     - creating an infinit animation
     - `margin: auto` with flexbox
     - flexbox properties for positioning and alignment
-    
+5. hotel description setion
+    - build multi-column list using `flex-wrap`
+    - why and how to use `mask-image` and `mask-size`
+
 ## Useful resource links
 * bennettfeely.com/clippy
 * linea.io
