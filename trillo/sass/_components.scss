@@ -173,7 +173,8 @@
         // initial state of hover animation
         transform: scaleY(0);
         // transform-origin: bottom;    // center by default even when unspecified 
-        // different animation timing function
+
+        // different animation timing function for diff properties
         transition: transform .2s,
                     width .4s cubic-bezier(1,0,0,1) .2s, // .2 cus with start imm after heigth effect 
                     background-color .1s;
@@ -185,7 +186,7 @@
         width: 100%;
     }
 
-    // give color when click 
+    // give color when clicked
     &__item:active::before {
         background-color: var(--color-primary-light);
     }
@@ -249,10 +250,149 @@
 ////////////////////////////////////////
 // GALLERY
 .gallery {
-    // display: flex;
+    display: flex;
 
-    // &__photo {
-    //     width: 100%;
-    //     display: block;
-    // }
+    &__photo {
+        width: 100%;
+        display: block;     // prevent white space on img
+    }
 }
+
+
+////////////////////////////////////////
+// HOTEL OVERVIEW
+.overview {
+    display: flex;
+    align-items: center;    // vertical align
+    border-bottom: var(--line);
+
+    &__heading {
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
+
+        // @media only screen and (max-width: $bp-small) {
+        //     font-size: 1.8rem;
+        //     padding: 1.25rem 2rem;
+        // }
+    }
+
+    &__stars {
+        margin-right: auto;     // magical...pushed the location to the extreme right...bg container only covers the content's width
+        display: flex;
+    }
+
+    &__icon-star,
+    &__icon-location {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__location {
+        // font-size: 1.2rem;
+        // display: flex;
+        // vertical-align: center;
+    }
+
+    &__icon-location {
+        // margin-right: .5rem;
+    }
+
+    &__rating {
+        // background-color: var(--color-primary);
+        // color: #fff;
+        // margin-left: 3rem;
+        // padding: 0 2.25rem;
+        // align-self: stretch;
+
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+
+        // @media only screen and (max-width: $bp-small) {
+        //     padding: 0 1.5rem;
+        // }
+    }
+
+    &__rating-average {
+        // font-size: 2.25rem;
+        // font-weight: 300;
+        // margin-bottom: -3px;
+
+        // @media only screen and (max-width: $bp-small) {
+        //     font-size: 1.8rem;
+        // }
+    }
+
+    &__rating-count {
+        // font-size: .8rem;
+        // text-transform: uppercase;
+
+        // @media only screen and (max-width: $bp-small) {
+        //     font-size: .5rem;
+        // }
+    }
+}
+
+
+
+////////////////////////////////////////
+// BUTTON INLINE
+.btn-inline {
+    border: none;
+    color: var(--color-primary);
+    font-size: inherit; // reusable depending on the place
+    border-bottom: 1px solid currentColor;  // same color as text #347
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+
+    // & span {
+    //     margin-left: 3px;
+    //     transition: margin-left .2s;
+    // }
+
+    &:hover {
+        color: var(--color-grey-dark-1);
+
+        span {
+            margin-left: 8px;
+        }
+    }
+
+    &:focus {   // similar to on-click
+        outline: none;
+        animation: pulsate 1s infinite;     // infinite animation
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+
+////////////////////////////////////////
+// PARAGRAPH
+// .paragraph:not(:last-of-type) {
+//     margin-bottom: 2rem;
+// }
+
+

@@ -431,7 +431,11 @@ Going with simple architecture unlike Natour
     - using 'scaleY' and multi properties to create a creative hover effect
     - how & why to use the `currentColorCSS` var
     - using flex alignment techiques: `flex-direction`, `justify-content` and `align-items`
-
+5. hotel content
+    - creating an infinit animation
+    - `margin: auto` with flexbox
+    - flexbox properties for positioning and alignment
+    
 ## Useful resource links
 * bennettfeely.com/clippy
 * linea.io
