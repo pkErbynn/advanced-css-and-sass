@@ -438,7 +438,9 @@ Going with simple architecture unlike Natour
 5. hotel description setion
     - build multi-column list using `flex-wrap`
     - why and how to use `mask-image` and `mask-size`
-
+6. call-to-action setion
+    - creative and modern hover effect
+    - `text-align` vs other flex props
 ## Useful resource links
 * bennettfeely.com/clippy
 * linea.io
