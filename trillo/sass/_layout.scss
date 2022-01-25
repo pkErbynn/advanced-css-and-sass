@@ -6,11 +6,12 @@
 
     min-height: 50rem;  // for test
 
-    // @media only screen and (max-width: $bp-largest) {
-    //     margin: 0;
-    //     max-width: 100%;
-    //     width: 100%;
-    // }
+    // desktop-first approach
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0;  // removes the redish bg
+        max-width: 100%;    // fixes space after reducing global font size in _base @ 
+        width: 100%;
+    }
 }
 
 .header {
@@ -33,9 +34,10 @@
 .content {
     display: flex;
 
-//     @media only screen and (max-width: $bp-medium) {
-//         flex-direction: column;
-//     }
+    // place side bar on top in small screen
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -65,13 +67,15 @@
     background-color: var(--color-grey-light-1);
     border-bottom: var(--line);
 
-//     @media only screen and (max-width: $bp-medium) {
-//         padding: 3rem;
-//     }
+    // reduce padding
+    @media only screen and (max-width: $bp-medium) {
+        padding: 3rem;
+    }
 
-//     @media only screen and (max-width: $bp-small) {
-//         flex-direction: column;
-//     }
+    // ly on top of each other
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+    }
 }
 
 .description {
@@ -81,15 +85,17 @@
     flex: 0 0 60%;  // when basis is determined, the rest usually goes to zeros 
     margin-right: 4.5rem;
 
-//     @media only screen and (max-width: $bp-medium) {
-//         padding: 2rem;
-//         margin-right: 3rem;
-//     }
+    // reduce padding
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
 
-//     @media only screen and (max-width: $bp-small) {
-//         margin-right: 0;
-//         margin-bottom: 3rem;
-//     }
+    // clear and reduce spaces when placed below
+    @media only screen and (max-width: $bp-small) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
 }
 
 .user-reviews {

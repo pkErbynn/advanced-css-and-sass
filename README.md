@@ -441,7 +441,16 @@ Going with simple architecture unlike Natour
 6. call-to-action setion
     - creative and modern hover effect
     - `text-align` vs other flex props
-## Useful resource links
+
+## Media queries
+Making trillo responsive with small amount of code. 
+    - The 'perfect approach' is used 
+    - cus breakpoint is set to where it start to break 
+    - css custome properties doesn't work with breakpoint variables, thus Sass var is used
+
+
+
+## Useful resource links - @all
 * bennettfeely.com/clippy
 * linea.io
 * unsplash.com
