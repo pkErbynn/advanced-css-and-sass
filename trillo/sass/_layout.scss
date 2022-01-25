@@ -24,11 +24,12 @@
     justify-content: space-between;
     align-items: center;    // vertical align 
  
-//     @media only screen and (max-width: $bp-smallest) {
-//         flex-wrap: wrap;
-//         align-content: space-around;
-//         height: 11rem;
-//     }
+    // move header ele to new line if not enough space avail
+    @media only screen and (max-width: $bp-smallest) {
+        flex-wrap: wrap;    
+        align-content: space-around;
+        height: 11rem;
+    }
 }
 
 .content {

@@ -14,11 +14,12 @@
     align-items: center; // centers at across/vertical axis 
     justify-content: center;     // centers at main/horizontal axis 
 
-    // @media only screen and (max-width: $bp-smallest) {
-    //     order: 1;
-    //     flex: 0 0 100%;
-    //     background-color: var(--color-grey-light-2);
-    // }
+    // place search to the last element
+    @media only screen and (max-width: $bp-smallest) {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: var(--color-grey-light-2);
+    }
 
     &__input {
         font-family: inherit;
@@ -151,9 +152,9 @@
         &:not(:last-child) {
             margin-bottom: .5rem;
 
-            // @media only screen and (max-width: $bp-medium) {
-            //     margin: 0;
-            // }
+            @media only screen and (max-width: $bp-medium) {
+                margin: 0;
+            }
         }
 
         @media only screen and (max-width: $bp-medium) {
