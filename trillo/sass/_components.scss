@@ -139,10 +139,11 @@
     list-style: none;
     margin-top: 3.5rem;
 
-    // @media only screen and (max-width: $bp-medium) {
-    //     display: flex;
-    //     margin: 0;
-    // }
+    // place nav items side-by-side
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        margin: 0;
+    }
 
     &__item {
         position: relative; // used with #163
@@ -155,9 +156,9 @@
             // }
         }
 
-        // @media only screen and (max-width: $bp-medium) {
-        //     flex: 1;
-        // }
+        @media only screen and (max-width: $bp-medium) {
+            flex: 1;    // nav item grow as much as they can
+        }
     }
 
     // a style design before/in front of side-nav item
@@ -206,15 +207,16 @@
         display: flex;
         align-items: center;
 
-        // @media only screen and (max-width: $bp-medium) {
-        //     justify-content: center;
-        //     padding: 2rem;
-        // }
+        // center links
+        @media only screen and (max-width: $bp-medium) {
+            justify-content: center;
+            padding: 2rem;
+        }
 
-        // @media only screen and (max-width: $bp-small) {
-        //     flex-direction: column;
-        //     padding: 1.5rem .5rem;
-        // }
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: 1.5rem .5rem;
+        }
     }
 
     &__icon {
@@ -241,9 +243,9 @@
     text-align: center;
     padding: 2.5rem;
 
-    // @media only screen and (max-width: $bp-medium) {
-    //     display: none;
-    // }
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
 }
 
 
@@ -455,7 +457,7 @@
     }
 
     &__friends {
-        display: flex;
+        display: flex;  // photos to always stay side-by-side
     }
 
     &__photo {
@@ -482,10 +484,10 @@
     position: relative;     // used with #533...to position the quotation marks 
     overflow: hidden;   // to hide overflown quotation
 
-    // @media only screen and (max-width: $bp-medium) {
-    //     padding: 2rem;
-    //     margin-bottom: 3rem;
-    // }
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
 
     &__text {
         margin-bottom: 2rem;
@@ -548,9 +550,9 @@
     padding: 3.5rem 0;
     text-align: center;
 
-    // @media only screen and (max-width: $bp-medium) {
-    //     padding: 2.5rem 0;
-    // }
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2.5rem 0;
+    }
 
     &__book-now {
         font-size: 2rem;
