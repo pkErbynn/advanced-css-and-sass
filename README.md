@@ -448,9 +448,13 @@ Making trillo responsive with small amount of code.
     - cus breakpoint is set to where it start to break 
     - css custome properties doesn't work with breakpoint variables, thus Sass var is used
 
+## trillo demo 
+* Screenshot <br><br>
+<img src="trillo/img/trillo-shot.png">
 
 
-## Useful resource links - @all
+
+# Useful resource links - @all
 * bennettfeely.com/clippy
 * linea.io
 * unsplash.com
