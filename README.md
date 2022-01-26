@@ -356,7 +356,7 @@ Some of the images are applied either via html (img tag) or css (bg-image)
 
 ## Demo
 
-### === natour screenshot <br> <br>
+### === natour screenshot <br>
 <img src="natour/img/natour-shot.png"> <br> <br>
 
 ### === animated natour gif
@@ -455,10 +455,10 @@ Making trillo responsive with small amount of code.
     - css custome properties doesn't work with breakpoint variables, thus Sass var is used
 
 ## trillo demo 
-* Screenshot <br><br>
+* Screenshot <br>
 <img src="trillo/img/trillo-shot.png">
 
-* Animated gif <br> <br>
+* Animated gif <br>
 ![Trillo animated](https://j.gifs.com/36EBnn.gif)
 
 
