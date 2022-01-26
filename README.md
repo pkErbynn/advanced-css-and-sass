@@ -462,6 +462,15 @@ Making trillo responsive with small amount of code.
 ![Trillo animated](https://j.gifs.com/36EBnn.gif)
 
 
+# Nexter 
+This project heavily focuses on **CSS Grid Layout**
+- What css grid is
+    - brand new module that brings a 2-dimensional grid sys to css for the 1st time
+    - replaces float layout, using less and more readable + logical css and html
+    - works perfectly well with _Flexbox_ - best for 1D layouts
+    - completely changes the way we envision and build 2D components and layouts
+- Why css grid
+
 
 # Useful resource links - @all
 * bennettfeely.com/clippy
