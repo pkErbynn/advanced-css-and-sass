@@ -355,6 +355,12 @@ Some of the images are applied either via html (img tag) or css (bg-image)
 
 
 ## Demo
+
+### === natour screenshot <br> <br>
+<img src="natour/img/natour-shot.png"> <br> <br>
+
+### === animated natour gif
+
 * Header <br> <br>
 ![Header demo](https://j.gifs.com/57VlGA.gif)
 
