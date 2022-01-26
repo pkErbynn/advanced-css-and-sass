@@ -452,6 +452,9 @@ Making trillo responsive with small amount of code.
 * Screenshot <br><br>
 <img src="trillo/img/trillo-shot.png">
 
+* Animated gif <br> <br>
+![Trillo animated](https://j.gifs.com/36EBnn.gif)
+
 
 
 # Useful resource links - @all
