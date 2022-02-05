@@ -464,13 +464,38 @@ Making trillo responsive with small amount of code.
 
 # Nexter 
 This project heavily focuses on **CSS Grid Layout**
-- What css grid is
+- What & why css grid
     - brand new module that brings a 2-dimensional grid sys to css for the 1st time
     - replaces float layout, using less and more readable + logical css and html
     - works perfectly well with _Flexbox_ - best for 1D layouts
     - completely changes the way we envision and build 2D components and layouts
-- Why css grid
+    - easily implementation even without framework like Bootrap, etc
 
+## Css Grid terminologies
+    - grid container
+    - grid items 
+    - grid column
+    - grid row
+
+    - grid line
+    - grid gutter
+    - grid area 
+
+### Grid properties overview
+    - grid-template-column: <X>fr, repeat(), %
+    - positioning: 
+        - grid-row-start/end
+        - grid-column-start/end
+    - spaning grid items:_
+        - increase grid-row-start/end & grid-column-start/end values
+            - -1 === till the end
+        - can have multiple grid items in same cell, *stacking*
+        - stack order with _z-index_
+        - can be used to create animation effects
+    - Ways of positioning grid: using...
+        1. grid line numbering (as default reference)
+        2. grid line naming...[name], defined with grid template 
+        3. grid...
 
 # Useful resource links - @all
 * bennettfeely.com/clippy
