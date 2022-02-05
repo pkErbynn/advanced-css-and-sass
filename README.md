@@ -510,6 +510,20 @@ This project heavily focuses on **CSS Grid Layout**
 - Aligning Tracks:
     - horizontal: `justify-content`
     - vertical: `align-content`
+- `min-content / max-content / minmax()`:
+    - `max-content`...wide as much as possible to fit its content WITHOUT line break
+    - `min-content`...adjust to accomodate content w/ line breaks
+    - `minmax()`...help content to grow in its grid cell
+    - example
+        ```
+        grid-template-columns: max-content 1fr 1fr min-content;
+        grid-template-rows: repeat(2, minmax(150px, min-content));
+        ```
+- `auto-fill / auto-fit`
+    - adoptive and flexible 
+    - help to achieve responsiveness
+    - help not to use any media queries
+    - rewatch
     
 NB: PROPERTIES OVERVIEW
 
