@@ -1,0 +1,15 @@
+{
+    "name": "nexter",
+    "version": "1.0.0",
+    "description": "landing page for a fictional compony that sells homes across the world",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    },
+    "author": "erbynn",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^7.0.0"
+    }
+}
+  
