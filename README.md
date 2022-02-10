@@ -525,7 +525,12 @@ This project heavily focuses on **CSS Grid Layout**
     - help not to use any media queries
     - rewatch
     
-NB: PROPERTIES OVERVIEW
+### Adding a build process
+A sequence of task that happens after a feature/product is completed and the resulted file(s) that is(are) ready for production env.
+Example is the  `package.json` script
+    - compile -> concatenate (with font icon) -> prefix -> compress
+
+NB: Re-Watch build pipeline
 
 # Useful resource links - @all
 * bennettfeely.com/clippy
