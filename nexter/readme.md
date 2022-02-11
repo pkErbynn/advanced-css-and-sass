@@ -1,7 +1,10 @@
 # Nexter 
 A fictional company called "nexter" which sells luxury home across the world
 - This project heavily focuses on **CSS Grid Layout**
-- What & why css grid
+
+## Demo
+...
+## What & why css grid
     - brand new module that brings a 2-dimensional grid sys to css for the 1st time
     - replaces float layout, using less and more readable + logical css and html
     - works perfectly well with _Flexbox_ - best for 1D layouts

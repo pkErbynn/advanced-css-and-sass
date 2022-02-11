@@ -2,6 +2,31 @@
 A nature tour site simulation
 - this project heavily focuses on the traditional **Float layout**
 
+## Demo
+
+### === natour screenshot <br>
+<img src="./img/natour-shot.png"> <br> <br>
+
+### === animated natour gif
+
+* Header <br> <br>
+![Header demo](https://j.gifs.com/57VlGA.gif)
+
+* Image composition <br> <br>
+![Image composition demo](https://j.gifs.com/08E2KN.gif)
+
+* Feature and card <br> <br>
+![Feature and card demo](https://j.gifs.com/RlkMzV.gif)
+
+* Story <br> <br>
+![Story](https://j.gifs.com/x68VDl.gif)
+
+* Form <br> <br>
+![Form](https://j.gifs.com/QkjNwG.gif)
+
+* Form and footer <br> <br>
+![Form and footer](https://j.gifs.com/57Vl5Y.gif)
+
 ## 3 pillars of good html and css
 1. Responsive design
     - Fluid layouts
@@ -346,29 +371,3 @@ Some of the images are applied either via html (img tag) or css (bg-image)
     - (img content is preserved but img is different)
     - depends on screen width...diff img for diff viewport width
     - application: line #368 (in .html)
-
-
-## Demo
-
-### === natour screenshot <br>
-<img src="./img/natour-shot.png"> <br> <br>
-
-### === animated natour gif
-
-* Header <br> <br>
-![Header demo](https://j.gifs.com/57VlGA.gif)
-
-* Image composition <br> <br>
-![Image composition demo](https://j.gifs.com/08E2KN.gif)
-
-* Feature and card <br> <br>
-![Feature and card demo](https://j.gifs.com/RlkMzV.gif)
-
-* Story <br> <br>
-![Story](https://j.gifs.com/x68VDl.gif)
-
-* Form <br> <br>
-![Form](https://j.gifs.com/QkjNwG.gif)
-
-* Form and footer <br> <br>
-![Form and footer](https://j.gifs.com/57Vl5Y.gif)

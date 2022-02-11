@@ -2,6 +2,13 @@
 A fictional all-in-one booking app where user can book hotel, flight, car
 - This project heavily focuses on **Flexbox layout**
 
+## Demo 
+* Screenshot <br>
+<img src="./img/trillo-shot.png">
+
+* Animated gif <br>
+![Trillo animated](https://j.gifs.com/36EBnn.gif)
+
 ## Flexbox concepts
 - Flex container
     - its display set to flex
@@ -72,10 +79,3 @@ Making trillo responsive with small amount of code.
     - The 'perfect approach' is used 
     - cus breakpoint is set to where it start to break 
     - css custome properties doesn't work with breakpoint variables, thus Sass var is used
-
-## trillo demo 
-* Screenshot <br>
-<img src="./img/trillo-shot.png">
-
-* Animated gif <br>
-![Trillo animated](https://j.gifs.com/36EBnn.gif)
