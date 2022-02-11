@@ -9,23 +9,23 @@ A nature tour site simulation
 
 ### === animated natour gif
 
-* Header <br> <br>
+* Header <br>
 ![Header demo](https://j.gifs.com/57VlGA.gif)
 
-* Image composition <br> <br>
+* Image composition <br>
 ![Image composition demo](https://j.gifs.com/08E2KN.gif)
 
-* Feature and card <br> <br>
+* Feature and card <br>
 ![Feature and card demo](https://j.gifs.com/RlkMzV.gif)
 
-* Story <br> <br>
+* Story <br>
 ![Story](https://j.gifs.com/x68VDl.gif)
 
-* Form <br> <br>
+* Form <br>
 ![Form](https://j.gifs.com/QkjNwG.gif)
 
-* Form and footer <br> <br>
-![Form and footer](https://j.gifs.com/57Vl5Y.gif)
+* Form and footer <br>
+![Form and footer.](https://j.gifs.com/57Vl5Y.gif)
 
 ## 3 pillars of good html and css
 1. Responsive design
