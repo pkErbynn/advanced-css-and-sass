@@ -5,7 +5,7 @@ A nature tour site simulation
 ## Demo
 
 ### === natour screenshot <br>
-<img src="./img/natour-shot.png"> <br> <br>
+<img src="./img/natour-shot.png">
 
 ### === animated natour gif
 
