@@ -14,6 +14,7 @@ Taking my CSS skills to the next LEVEL!
         - **core technology**: grid
 
 ## demo preview
+
 - [Natour](https://github.com/pkErbynn/advanced-css-and-sass/tree/main/natour)
 <img src="natour/img/natour-shot.png">
 
