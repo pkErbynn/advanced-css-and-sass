@@ -10,12 +10,12 @@ Taking my CSS skills to the next LEVEL!
 
 
 # Useful resource links - @all
-* bennettfeely.com/clippy
-* linea.io
-* unsplash.com
-* coverr.co
-* gs.statcounter.com
-* sizzy.co ...for responsive testing
-* caniuse.com
-* icomoon.io
+* [bennettfeely.com/clippy](bennettfeely.com/clippy)
+* [linea.io](linea.io)
+* [unsplash.com](unsplash.com)
+* [coverr.co](coverr.co)
+* [gs.statcounter.com](gs.statcounter.com)
+* [sizzy.co](sizzy.co) ...for responsive testing
+* [caniuse.com](caniuse.com)
+* [icomoon.io](icomoon.io)
 <br>
