@@ -4,8 +4,8 @@ Taking my CSS skills to the next LEVEL!
 
 - compose of 3 hands-on projects
     - [natour](https://github.com/pkErbynn/advanced-css-and-sass/tree/main/natour)
-        - _intro_: a nature tour site simulation
-        - _core technology_: float
+        - **intro**: a nature tour site simulation
+        - **core technology**: float
     - [trillo](https://github.com/pkErbynn/advanced-css-and-sass/tree/main/trillo)
         - **intro**: a fictional all-in-one booking app where user can book hotel, flight, car
         - **core technology**: flexbox
