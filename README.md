@@ -1,6 +1,6 @@
 # Advanced-css-and-sass
 
-Taking my CSS skills to the next LEVEL!
+Taking my CSS and SASS skills to the next LEVEL! :<3
 
 - compose of 3 hands-on projects
     - [natour](https://github.com/pkErbynn/advanced-css-and-sass/tree/main/natour)
@@ -13,8 +13,7 @@ Taking my CSS skills to the next LEVEL!
         - **intro**: a fictional company called "nexter" which sells luxury home across the world
         - **core technology**: grid
 
-## demo preview
-
+## demo previews
 - [Natour](https://github.com/pkErbynn/advanced-css-and-sass/tree/main/natour)
 <img src="natour/img/natour-shot.png">
 

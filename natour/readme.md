@@ -1,4 +1,7 @@
 # Natour
+A nature tour site simulation
+- this project heavily focuses on the traditional **Float layout**
+
 ## 3 pillars of good html and css
 1. Responsive design
     - Fluid layouts

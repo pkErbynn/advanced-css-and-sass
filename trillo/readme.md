@@ -1,4 +1,7 @@
 # Trillo
+A fictional all-in-one booking app where user can book hotel, flight, car
+- This project heavily focuses on **Flexbox layout**
+
 ## Flexbox concepts
 - Flex container
     - its display set to flex
