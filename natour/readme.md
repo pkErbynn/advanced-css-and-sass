@@ -348,7 +348,7 @@ Some of the images are applied either via html (img tag) or css (bg-image)
 ## Demo
 
 ### === natour screenshot <br>
-<img src="natour/img/natour-shot.png"> <br> <br>
+<img src="./img/natour-shot.png"> <br> <br>
 
 ### === animated natour gif
 
