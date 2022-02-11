@@ -1,4 +1,4 @@
-# advanced-css-and-sass
+# Advanced-css-and-sass
 
 Taking my CSS skills to the next LEVEL!
 
@@ -13,9 +13,18 @@ Taking my CSS skills to the next LEVEL!
         - **intro**: a fictional company called "nexter" which sells luxury home across the world
         - **core technology**: grid
 
+## demo preview
+- [Natour](https://github.com/pkErbynn/advanced-css-and-sass/tree/main/natour)
+<img src="natour/img/natour-shot.png">
+
+- [Trillo](https://github.com/pkErbynn/advanced-css-and-sass/tree/main/trillo)
+<img src="trillo/img/trillo-shot.png">
+
+- [Nexter](https://github.com/pkErbynn/advanced-css-and-sass/tree/main/nexter)
+<img src="nexter/img/nexter-shot.png">
 
 
-# Useful resource links - @all
+## useful resource links - @all
 * [bennettfeely.com/clippy](bennettfeely.com/clippy)
 * [linea.io](linea.io)
 * [unsplash.com](unsplash.com)
