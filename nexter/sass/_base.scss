@@ -35,10 +35,16 @@ body {
     line-height: 1.6;
 }
 
-// Sets the size of each row to depend on the smallest item in the row
 .container {
     display: grid;
+    // min-content: Sets the size of each row to depend on the smallest item in the row
     grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-    // grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    // column grid-lines are mostly named, not rows, cus their more difficult
+    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) /*small ml space*/ [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) /*small mr space*/ [full-end];
  
+    // test
+    & > * {
+        padding: 40px;
+        font-size: 3rem;
+    }
 }

@@ -1,19 +1,18 @@
 .features {
-    // grid-column: center-start / center-end;
-
+    grid-column: center-start / center-end;
     // margin: 15rem 0;
 
     // @supports(display: grid) {
-    //     display: grid;
-    //     //grid-template-columns: repeat(3, 1fr);
-    //     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    //     grid-gap: 6rem;
-    //     align-items: start;
+        display: grid;
+        //grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 6rem;
+        align-items: start;
     // }
 }
 
 
-// .feature {
+.feature {
 
 //     float: left;
 //     width: 33.3333%;
@@ -24,20 +23,23 @@
 //         margin-bottom: 0;
 //     }
 
-//     display: grid;
-//     grid-template-columns: min-content 1fr;
-//     grid-row-gap: 1.5rem;
-//     grid-column-gap: 2.5rem;
+// nested grid
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    // when row not specified takes, set to 'auto', row taking the size on its content
 
-//     &__icon {
-//         fill: $color-primary;
-//         width: 4.5rem;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 2.5rem;
+
+    &__icon {
+        fill: $color-primary;
+        width: 4.5rem;
 //         height: 4.5rem;
-//         grid-row: 1 / span 2;
-//         transform: translateY(-1rem);
-//     }
+        grid-row: 1 / span 2;   // -1 works with explicit grid
+        transform: translateY(-1rem);
+    }
 
-//     &__text {
-//         font-size: 1.7rem;
-//     }
-// }
+    &__text {
+        font-size: 1.7rem;
+    }
+}
