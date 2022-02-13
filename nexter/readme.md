@@ -51,8 +51,8 @@ A fictional company called "nexter" which sells luxury home across the world
     - horizontal: `justify-content`
     - vertical: `align-content`
 - `min-content / max-content / minmax()`:
-    - `max-content`...wide as much as possible to fit its content WITHOUT line break
-    - `min-content`...adjust to accomodate content w/ line breaks
+    - `max-content`...wide as much as possible to accomodate the longest content's width
+    - `min-content`...adjust to accomodate to the minimum content's width...next to line breaks
     - `minmax()`...help content to grow in its grid cell
     - example
         ```
