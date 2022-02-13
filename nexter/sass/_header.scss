@@ -21,45 +21,46 @@
     //     padding: 5rem;
     // }
 
-    // &__logo {
-    //     height: 3rem;
-    //     justify-self: center;
-    // }
+    &__logo {
+        height: 3rem;
+        justify-self: center;
+    }
 
-    // &__btn {
-    //     align-self: start;
-    //     justify-self: start;
-    // }
+    &__btn {
+        align-self: start;
+        justify-self: start;
+    }
 
-    // &__seenon-text {
-    //     display: grid;
-    //     grid-template-columns: 1fr max-content 1fr;
-    //     grid-column-gap: 1.5rem;
-    //     align-items: center;
+    &__seenon-text {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-column-gap: 1.5rem;
+        align-items: center;
 
-    //     font-size: 1.6rem;
-    //     color: $color-grey-light-2;
+        font-size: 1.6rem;
+        color: $color-grey-light-2;
 
-    //     &::before,
-    //     &::after {
-    //         content: "";
-    //         height: 1px;
-    //         display: block;
-    //         background-color: currentColor;
-    //     }
-    // }
+        // ------- seen on ------
+        &::before,
+        &::after {
+            content: "";
+            height: 1px;
+            display: block;
+            background-color: currentColor; // uses L#41
+        }
+    }
 
-    // &__seenon-logos {
-    //     display: grid;
-    //     grid-template-columns: repeat(4, 1fr);
-    //     grid-column-gap: 3rem;
-    //     justify-items: center;
-    //     align-items: center;
+    &__seenon-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 3rem;
+        justify-items: center;
+        align-items: center;
 
-    //     img {
-    //         max-height: 2.5rem;
-    //         max-width: 100%;
-    //         filter: brightness(70%);
-    //     }
-    // }
+        img {
+            max-height: 2.5rem;
+            max-width: 100%;
+            filter: brightness(70%);    // star
+        }
+    }
 }
