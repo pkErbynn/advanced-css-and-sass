@@ -69,3 +69,7 @@ A fictional company called "nexter" which sells luxury home across the world
 A sequence of task that happens after a feature/product is completed and the resulted file(s) that is(are) ready for production env.
 Example is the  `package.json` script
     - compile -> concatenate (with font icon) -> prefix -> compress
+
+### Browers preference
+- Firefox: perfect for Grid layout visibility
+- Chrome: perfect for responsiveness 
